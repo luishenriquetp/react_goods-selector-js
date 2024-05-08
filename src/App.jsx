@@ -30,18 +30,16 @@ export const App = () => {
     <main className="section container">
       <h1 className="title is-flex is-align-items-center">
         {selectedGood ? `${selectedGood} is selected` : 'No goods selected'}
-      </h1>
 
-      {selectedGood && (
-        <h1 className="title is-flex is-align-items-center">
+        {selectedGood && (
           <button
             onClick={clearButtonHandler}
             data-cy="ClearButton"
             type="button"
             className="delete ml-3"
           />
-        </h1>
-      )}
+        )}
+      </h1>
 
       <table className="table">
         <tbody>
